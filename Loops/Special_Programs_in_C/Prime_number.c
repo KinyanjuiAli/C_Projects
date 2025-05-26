@@ -35,7 +35,7 @@ int main()
     // Loop to check if x has any divisor between 2 and sqrt(x)
     for(i = 2; i <= val1; i++)
     {
-        if(val2 % i == 0 && val2 != i) // Don't count the number dividing itself
+        if(val2 % i == 0) // Don't count the number dividing itself
         {
             count = 1; // Found a factor → not prime
             break;
